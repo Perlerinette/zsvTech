@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZSV Technologies</title>
+
+    <!-- icon in tab -->
+    <link rel="icon" href="./assets/logo-01.ico" type="image/gif" sizes="16x16">
+
+    <!--CSS file link-->
+    <link rel="stylesheet" href="./styles.css">
+
+    <!--Bootstrap CSS reference-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <!-- Fontawesome icons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <!-- <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"> -->
+
+    <!-- Fonts -->
+    <link href="//db.onlinewebfonts.com/c/350d0dc63516f53b51ed2e0602c3ffbe?family=SF+Grandezza" rel="stylesheet" type="text/css"/>
+
+</head>
+<body>
+    
+    <!-- Page wrapper -->
+    <div id="page-wrapper">
+
+
+        <!-- Header -->
+        <header id="header" class="header container-fluid">
+            <nav class="navbar navbar-expand-sm navbar-light" >
+                
+                <!-- Top-Left Name/Logo -->
+                <a class="navbar-brand" href="#">
+                    <img src="assets/logo-01.jpg" width="150px" >
+                </a>
+
+                <!-- Toggler/collapsibe Button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                    <!-- Navbar links -->
+                <div class="collapse navbar-collapse" id="navbarMenu">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link " href="#company" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Company</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">About us</a>
+                                <a class="dropdown-item" href="#">Why choosing us?</a>
+                                <a class="dropdown-item" href="#">Pricing & Plans</a>
+                            </div>
+                        </li>
+                        <!-- <li class="nav-item" >
+                        <a class="nav-link" href="#services">Services</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn-quote" href="#contact" role="button">Request a Quote</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- End Header -->
+
+
+         <!-- Home Page -->
+         <section id="home" class="home">
+            <!-- bg image******************* -->
+            <div class="jumbotron background d-flex align-items-center ">
+                <div class="home-name container ml-2"> 
+                </div>
+            </div>
+            
+        </section>
+        <!-- End Home Page -->
+
+
+        <!-- Contact Page -->
+        <section id="contact" class="section-wrapper container py-5">
+            <div class="row">
+                <div class="col-xl-8 offset-xl-2">
+
+                    <h1 class="section-title text-center"><i class="fa fa-cog fa-xs fa-spin"></i> Contact us</h1>
+    
+                    <p>Fill this form to contact us. ***TO BE CHANGED***</p>
+                    <br/>
+
+                    <form id="contact-form" method="POST" action="contact.php" role="form">
+
+                        <div class="messages"></div>
+    
+                        <div class="controls">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_name">Full Name *</label>
+                                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your name *" required="required"
+                                            data-error="Name is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <div class="form-group">
+                                            <label for="form_company">Company</label>
+                                            <input id="form_company" type="text" name="company" class="form-control" placeholder="(Optional)" >
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_email">Email *</label>
+                                        <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required"
+                                            data-error="Valid email is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_phone">Phone</label>
+                                        <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="(Optional)">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="form_need">Please specify your need *</label>
+                                        <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                                            <option value=""></option>
+                                            <option value="Request information">General inquiry</option>
+                                            <option value="Request quotation">Request quotation</option>
+                                            <option value="Request order status">Request order status</option>
+                                            <option value="Request copy of an invoice">Request copy of an invoice</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="form_message">Message *</label>
+                                <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required"
+                                    data-error="Please, leave us a message."></textarea>
+                                <div class="help-block with-errors"></div>
+                            </div>
+    
+    
+                            <!-- <div class="form-group">
+                                <div class="g-recaptcha" data-sitekey="6LfKURIUAAAAAO50vlwWZkyK_G2ywqE52NU7YO0S" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
+                                <input class="form-control d-none" data-recaptcha="true" required data-error="Please complete the Captcha">
+                                <div class="help-block with-errors"></div>
+                            </div> -->
+    
+                            <div class="text-center">
+                                <input type="submit" class="btn btn-success btn-send " value="Send message">
+                            </div>
+                            <p class="text-muted">
+                                <strong>*</strong> These fields are required.
+                            </p>
+    
+                        </div>
+    
+                    </form>
+
+                </div>
+            </div>
+        </section>
+        <!-- End Contact Page -->
+
+
+        <!-- Footer -->
+        <div class="footer py-5">
+            <div class="container-fluid">
+                <div class="row px-5">
+                    <div class="footer-left col-md-4 col-sm-12 pl-4">
+                            <h3>ZSV Technologies</h3>
+                            <p class="footer-links">
+                                <a href="">Company</a>
+                                <i class="fa fa-cog fa-xs fa-spin"></i>
+                                <a href="#">Services</a>
+                                <i class="fa fa-cog fa-xs fa-spin"></i>
+                                <a href="#contact">Contact</a>
+                            </p>
+                    </div>
+                    <div class="footer-center col-md-4 col-sm-12 ">
+                        
+                            <p><i class="fa fa-map-marker"></i>&nbsp;49 Boone Vlg #120 <br/>Zionsville, IN 46077</p>
+                        
+                            <p><i class="fa fa-phone"></i> (317) 732-1884</p>
+                        
+                            <p><i class="fa fa-envelope"></i><a href="mailto:info@zsvtechnologies.com"> info@zsvtechnologies.com</a></p>
+                        
+                    </div>
+                    <div class="footer-right col-md-4 col-sm-12">
+                        <p class="footer-company-about text-justify">
+                            <span>About the company</span>
+                            Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae corrupti sit numquam, repellat dolorem maxime quam recusandae totam laboriosam atque, exercitationem quia iusto iure, quis ratione. Iure exercitationem blanditiis nemo.
+                        </p>
+                        <!-- <div class="footer-icons">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                            <a href="#"><i class="fa fa-github"></i></a>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footerbar text-center py-1">
+            <span class="align-middle">
+                <a class="copyright scroll-top" href="">
+                    &copy; 
+                    <script>
+                        document.write(new Date().getFullYear());
+                    </script>
+                    - ZSV Technologies. All Rights Reserved.
+                </a>
+            </span>
+        </div>
+        <!-- End Footer -->
+
+
+    </div>
+    <!-- End Page wrapper -->
+
+    <!-- Local JS Scripts -->
+    <script src="zsvTechWeb.js"></script>
+    <script src="contact.js"></script>
+    <!-- End Local JS Scripts -->
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <!-- Bootstrap scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>        
+    <!-- Bootstrap validator -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
+
+</body>
+</html>

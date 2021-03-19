@@ -1,0 +1,116 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+}
+
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#page-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+/* .header {
+  margin-top: 0 !important;
+  position: fixed;
+  height: 160px;
+} */
+
+/* .ml-auto .dropdown-menu {
+  left: auto !important;
+  right: 0px;
+} */
+
+/*--- HEADER ---*/
+.navbar-nav > li {
+  padding-left: 10px;
+  padding-right: 30px;
+  font-family: "SF Grandezza";
+  font-size: "18px";
+}
+
+.nav-link:hover {
+  color: #0865a6 !important;
+}
+
+.btn-quote {
+  color: #3f3f3f !important;
+  background-color: #fff !important;
+  border: 2px solid #3f3f3f !important;
+  border-radius: 8px !important;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none !important;
+}
+.btn-quote:hover {
+  background-color: #1a75bbbd !important;
+  box-shadow: 0px 15px 20px rgba(26, 117, 187, 0.4);
+  color: #fff !important;
+  transform: translateY(-2px);
+}
+
+/*--- CONTACT ---*/
+.section-title {
+  color: #0865a6;
+  font-variant: small-caps;
+  font-family: "SF Grandezza";
+  font-weight: 900;
+  padding-bottom: 15px;
+}
+
+.form-group label {
+  font-family: "SF Grandezza";
+}
+
+/*--- FOOTER ---*/
+.footer {
+  /* background: #1a75bb; */
+  background: #3f3f3f;
+  height: auto;
+}
+
+.footer h3 {
+  color: #0865a6;
+}
+
+.footer-links i,
+.footer-center i {
+  color: #0865a6;
+}
+
+.footer a,
+.footer p {
+  color: white;
+  text-decoration: none;
+}
+
+.footer a:hover,
+.footer p:hover {
+  color: 1a75bb;
+  text-decoration: none;
+}
+
+.footerbar {
+  height: auto;
+  background: #1a75bb;
+}
+
+.footerbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.copyright:hover {
+  color: white;
+  /* font-weight: bold; */
+  text-decoration: none;
+}
