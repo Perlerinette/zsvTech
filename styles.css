@@ -18,6 +18,14 @@ body {
   width: 100%;
 }
 
+section {
+  height: 100vh;
+}
+
+.spacing {
+  height: 20px;
+}
+
 /* .header {
   margin-top: 0 !important;
   position: fixed;
@@ -58,6 +66,23 @@ body {
   transform: translateY(-2px);
 }
 
+/*--- HOME ---*/
+
+.card {
+  border: solid 2px #1a75bbbd !important;
+  border-radius: 8px !important;
+}
+
+.resize-image {
+  width: 5px;
+  height: auto;
+}
+.card-img-top {
+  width: 100%;
+  height: 10vw;
+  object-fit: contain;
+}
+
 /*--- CONTACT ---*/
 .section-title {
   color: #0865a6;
@@ -69,6 +94,23 @@ body {
 
 .form-group label {
   font-family: "SF Grandezza";
+}
+
+.btn-contact {
+  color: #3f3f3f !important;
+  background-color: #1a75bbbd !important;
+  border: 2px solid #3f3f3f !important;
+  border-radius: 8px !important;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none !important;
+}
+.btn-contact:hover {
+  background-color: #3f3f3f !important;
+  box-shadow: 0px 15px 20px rgba(26, 117, 187, 0.4);
+  color: #fff !important;
+  transform: translateY(2px);
 }
 
 /*--- FOOTER ---*/
@@ -93,9 +135,8 @@ body {
   text-decoration: none;
 }
 
-.footer a:hover,
-.footer p:hover {
-  color: 1a75bb;
+.footer a:hover {
+  color: #1a75bb;
   text-decoration: none;
 }
 
